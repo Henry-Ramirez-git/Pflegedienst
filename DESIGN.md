@@ -1,4 +1,4 @@
-# Design-Plan Familienpflege Pyritz (Arbeitsdatei)
+# Design-Plan Pflegedienst Saaletal (Arbeitsdatei)
 **Ziel:** Ruhig, vertrauenswürdig, lesbar für Ältere und Angehörige. Alles in System-Schriften (kein Google Fonts, DSGVO).
 ## Tokens
 - Farben: Tiefgrün `#0f4c4a` (Aktionen), Dunkelgrün `#0a3534` (Überschriften/Footer), Hintergrund `#f4f8f7`, Weiß `#fff` (Wechselsektionen), Text `#17252a`, Gedämpft `#44585a`, Akzent Gelb `#f0b43c` (nur Terminmarker, dunkler Text). Kontraste: Text/Hintergrund >12:1, Gedämpft >7:1, Weiß auf Grün >9:1.
@@ -12,3 +12,5 @@
 Bilder → Galerie-Dialog (Pfeiltasten, Esc). „Formular“ → Dialog mit gleichem Formular. Fokus sichtbar, `prefers-reduced-motion` beachtet, Bewegung nur bei Nutzeraktion.
 ## Daten (Firebase Firestore)
 `services` {title,text,order} · `events` {date YYYY-MM-DD,time,title}. Ohne Konfiguration: Standardleistungen aus der alten Seite.
+## Änderungen v2
+Name „Pflegedienst Saaletal“, Logo `logo.svg` (dunkelgrünes Symbol auf Weiß) im Header. Neue Sektion Team (14 Kacheln, Foto 400×400) zwischen Termine und Partner. Partner-Kacheln größer (min. 320px, Gap 40px). 2px-Trennlinien zwischen Sektionen, 2px-Rahmen um den Kontaktblock. Notruf zusätzlich bei Telefon und im Footer.
